@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    background-color: rgb(243, 96, 96);
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    border-radius: 100px;
+    border: 10px solid rgb(92, 24, 24);
+}
+button{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(255, 215, 169);
+    border-radius: 100px;
+    border:5px solid rgb(255, 136, 0);
+}
