@@ -9,27 +9,27 @@
 </head>
 <body>
     <h1>Guessing Game</h1>
-    <!-- <p id="out">Your number is : <p id="in">0</p></p> -->
+    <div id="out">Your number is : </div>
     <button onclick="game()">Start the Game</button>
     <script>
         function game(){
             num=prompt("Enter a number between 1 and 100: ");
             if (num>1 && num<100){
                 // document.getElementById("in").innerHTMl=num;
-                document.write("Your number is : "+num+" ");
+                document.getElementById("out").innerHTML=("Your number is : "+num+" ");
                 wins="";
                 for (i=0;i<5;i++){
                     guess=Math.floor(Math.random()*100);
-                    document.write("Computer Guessed : "+guess+" ");
+                    document.getElementById("out").innerHTML+=("Computer Guessed : "+guess+" ");
                     if (guess==num){
                         wins="yes";
                     }
                 }
                 if (wins=="yes"){
-                    document.write("You Lose!");
+                    document.getElementById("out").innerHTML+=("You Lose!");
                 }
                 else{
-                    document.write("You Win!");
+                    document.getElementById("out").innerHTML+=("You Win!");
                 }
             }
             else{
